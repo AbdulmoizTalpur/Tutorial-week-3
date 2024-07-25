@@ -1,9 +1,39 @@
-<mxfile host="app.diagrams.net" modified="2024-07-25T11:49:06.437Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.6.5" etag="LKuADWCtD21O2YDnibwQ" type="github">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.4">
   <diagram name="Page-1" id="coFOwTjBDLkcDuZQObqv">
-    <mxGraphModel>
+    <mxGraphModel dx="1257" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="sm-rsVGKEM00RcZHThYW-1" value="Employee" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="250" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="sm-rsVGKEM00RcZHThYW-7" value="&lt;div&gt;- id: int&lt;/div&gt;&lt;div&gt;- name: String&lt;/div&gt;&lt;div&gt;- age: int&lt;/div&gt;&lt;div&gt;- gender: String&lt;/div&gt;&lt;div&gt;- nationality: String&lt;/div&gt;&lt;div&gt;- ratePerHour: double&lt;/div&gt;&lt;div&gt;- email: String&lt;/div&gt;&lt;div&gt;- phNum: String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Employee(id: int, name: String, age: int, gender: String, nationality: String, ratePerHour: double, email: String, phNum: String)&lt;/div&gt;&lt;div&gt;+ getId(): int&lt;/div&gt;&lt;div&gt;+ getName(): String&lt;/div&gt;&lt;div&gt;+ setName(name: String): void&lt;/div&gt;&lt;div&gt;+ getAge(): int&lt;/div&gt;&lt;div&gt;+ setAge(age: int): void&lt;/div&gt;&lt;div&gt;+ getGender(): String&lt;/div&gt;&lt;div&gt;+ setGender(gender: String): void&lt;/div&gt;&lt;div&gt;+ getNationality(): String&lt;/div&gt;&lt;div&gt;+ setNationality(nationality: String): void&lt;/div&gt;&lt;div&gt;+ getRatePerHour(): double&lt;/div&gt;&lt;div&gt;+ setRatePerHour(ratePerHour: double): void&lt;/div&gt;&lt;div&gt;+ getEmail(): String&lt;/div&gt;&lt;div&gt;+ setEmail(email: String): void&lt;/div&gt;&lt;div&gt;+ getPhNum(): String&lt;/div&gt;&lt;div&gt;+ setPhNum(phNum: String): void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sm-rsVGKEM00RcZHThYW-1">
+          <mxGeometry y="104" width="250" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="sm-rsVGKEM00RcZHThYW-5" value="BakeryManager" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="20" width="260" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="sm-rsVGKEM00RcZHThYW-6" value="+ BakeryManager(id: int, name: String, email: String, phNum: String)&lt;div&gt;+&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;manageSalesPersons(scanner: Scanner, bakerySystem: BakeryMgmntSys): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+ applyDiscount(order: Order, discount: double): void&lt;/div&gt;&lt;div&gt;+ viewCustomerFeedback(): void&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sm-rsVGKEM00RcZHThYW-5">
+          <mxGeometry y="30" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="sm-rsVGKEM00RcZHThYW-8" value="SalesPerson" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="30" width="300" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="sm-rsVGKEM00RcZHThYW-9" value="+ SalesPerson(id: int, name: String, age: int, gender: String, nationality: String, ratePerHour: double, email: String, phNum: String)&lt;div&gt;+&lt;span style=&quot;background-color: initial;&quot;&gt;updateOrderStatus(order: Order, status: String): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+processPayment(order: Order): void&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sm-rsVGKEM00RcZHThYW-8">
+          <mxGeometry y="-30" width="280" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="sm-rsVGKEM00RcZHThYW-12" value="BakeryMgmtSys" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="240" width="390" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="sm-rsVGKEM00RcZHThYW-16" value="&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;- orders: List&amp;lt;Order&amp;gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;- customers: List&amp;lt;Customer&amp;gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;- salesPersons: List&amp;lt;SalesPerson&amp;gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;- menu: Menu&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;+ BakeryMgmntSys(orders: List&amp;lt;Order&amp;gt;, customers: List&amp;lt;Customer&amp;gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&amp;nbsp; &amp;nbsp;, salesPersons: List&amp;lt;SalesPerson&amp;gt;, menu: Menu)&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;div&gt;+ getMenu(): Menu&lt;/div&gt;&lt;div&gt;+ getOrders(): List&amp;lt;Order&amp;gt;&lt;/div&gt;&lt;div&gt;+ createOrder(customerName: String): void&lt;/div&gt;&lt;div&gt;+ displayOrders(): void&lt;/div&gt;&lt;div&gt;+ addCustomer(customer: Customer): void&lt;/div&gt;&lt;div&gt;+ displayCustomers(): void&lt;/div&gt;&lt;div&gt;+ addSalesPerson(salesPerson: SalesPerson): void&lt;/div&gt;&lt;div&gt;+ displaySalesPersons(): void&lt;/div&gt;&lt;div&gt;+ generateSalesReport(): void&lt;/div&gt;&lt;div&gt;+ manageSalesPersons(scanner: Scanner): void&lt;/div&gt;&lt;div&gt;+ applyDiscount(order: Order, discount: double): void&lt;/div&gt;&lt;div&gt;+ viewCustomerFeedback(): void&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sm-rsVGKEM00RcZHThYW-12">
+          <mxGeometry x="10" y="150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sm-rsVGKEM00RcZHThYW-15" value="Customer" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="230" width="320" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="sm-rsVGKEM00RcZHThYW-17" value="&lt;div&gt;- custID: int&lt;/div&gt;&lt;div&gt;- custName: String&lt;/div&gt;&lt;div&gt;- custAddr: String&lt;/div&gt;&lt;div&gt;- custEmail: String&lt;/div&gt;&lt;div&gt;- custPhNum: String&lt;/div&gt;&lt;div&gt;- custHist: List&amp;lt;Order&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Customer(custID: int, custName: String,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;custAddr: String, custEmail: String, custPhNum: String)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;displayCust(): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+ getCustHist(): List&amp;lt;Order&amp;gt;&lt;/div&gt;&lt;div&gt;+ addOrder(order: Order): void&lt;/div&gt;&lt;div&gt;+ viewPastOrders(): void&lt;/div&gt;&lt;div&gt;+ provideFeedback(feedback: String): void&lt;/div&gt;&lt;div&gt;+ trackOrder(order: Order): void&lt;/div&gt;&lt;div&gt;+ confirmOrder(order: Order): void&lt;/div&gt;&lt;div&gt;+ cancelOrder(order: Order): void&lt;/div&gt;&lt;div&gt;+ getCustName(): String&lt;/div&gt;&lt;div&gt;+ getCustID(): int&lt;/div&gt;&lt;div&gt;+ getCustAddr(): String&lt;/div&gt;&lt;div&gt;+ getCustEmail(): String&lt;/div&gt;&lt;div&gt;+ getCustPhNum(): String&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="740" y="250" width="320" height="340" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
