@@ -22,7 +22,7 @@
         <mxCell id="dLCL1BNoXGIihHrT0mXC-19" value="Displaying Profile Page" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="395" y="320" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="dLCL1BNoXGIihHrT0mXC-20" value="Choosing Option Type" style="endArrow=block;html=1;rounded=0;align=center;verticalAlign=bottom;endFill=0;labelBackgroundColor=none;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dLCL1BNoXGIihHrT0mXC-10" target="dLCL1BNoXGIihHrT0mXC-19">
+        <mxCell id="dLCL1BNoXGIihHrT0mXC-20" value="Clicks Profile" style="endArrow=block;html=1;rounded=0;align=center;verticalAlign=bottom;endFill=0;labelBackgroundColor=none;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dLCL1BNoXGIihHrT0mXC-10" target="dLCL1BNoXGIihHrT0mXC-19">
           <mxGeometry x="-0.3333" y="75" relative="1" as="geometry">
             <mxPoint x="330" y="330" as="sourcePoint" />
             <mxPoint x="490" y="330" as="targetPoint" />
@@ -48,6 +48,21 @@
         </mxCell>
         <mxCell id="dLCL1BNoXGIihHrT0mXC-26" value="Verifying Credentials" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="395" y="480" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLCL1BNoXGIihHrT0mXC-27" value="Displaying Home Page" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="395" y="640" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLCL1BNoXGIihHrT0mXC-28" value="Valid Credentials" style="endArrow=block;html=1;rounded=0;align=center;verticalAlign=bottom;endFill=0;labelBackgroundColor=none;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dLCL1BNoXGIihHrT0mXC-26" target="dLCL1BNoXGIihHrT0mXC-27">
+          <mxGeometry x="-0.3333" y="55" relative="1" as="geometry">
+            <mxPoint x="460" y="550" as="sourcePoint" />
+            <mxPoint x="490" y="630" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dLCL1BNoXGIihHrT0mXC-29" value=":powertype {constraint1}" style="resizable=0;html=1;align=center;verticalAlign=top;labelBackgroundColor=none;" connectable="0" vertex="1" parent="dLCL1BNoXGIihHrT0mXC-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
