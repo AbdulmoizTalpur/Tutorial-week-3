@@ -34,6 +34,21 @@
             <mxPoint x="70" y="-20" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="dLCL1BNoXGIihHrT0mXC-24" value="Perfom Login Details" style="endArrow=block;html=1;rounded=0;align=center;verticalAlign=bottom;endFill=0;labelBackgroundColor=none;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dLCL1BNoXGIihHrT0mXC-19" target="dLCL1BNoXGIihHrT0mXC-26">
+          <mxGeometry x="-0.3333" y="75" relative="1" as="geometry">
+            <mxPoint x="412.5" y="380" as="sourcePoint" />
+            <mxPoint x="517.5" y="450" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dLCL1BNoXGIihHrT0mXC-25" value="Verify Login Details" style="resizable=0;html=1;align=center;verticalAlign=top;labelBackgroundColor=none;" connectable="0" vertex="1" parent="dLCL1BNoXGIihHrT0mXC-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dLCL1BNoXGIihHrT0mXC-26" value="Verifying Credentials" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="395" y="480" width="140" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
